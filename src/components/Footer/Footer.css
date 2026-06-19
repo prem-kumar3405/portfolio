@@ -1,0 +1,28 @@
+.footer {
+  background: #0b1120;
+
+  padding: 15px;
+
+  text-align: center;
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-content h2,
+.footer-content > p {
+  display: none;
+}
+
+.footer-socials {
+  margin: 10px 0;
+}
+
+.footer-bottom {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-bottom p:last-child {
+  display: none;
+}

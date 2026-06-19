@@ -1,0 +1,146 @@
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10%;
+
+  gap: 60px;
+
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #111827,
+    #1e293b
+  );
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 650px;
+}
+
+.hero-content h3 {
+  color: #94a3b8;
+  font-size: 1.2rem;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin: 15px 0;
+  line-height: 1.2;
+}
+
+.hero-content h1 span {
+  color: #38bdf8;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #38bdf8;
+  color: #000;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  border: 1px solid #38bdf8;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 350px;
+  height: 350px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 50%;
+  border: 5px solid #38bdf8;
+
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+}
+.resume-btn {
+  background: #22c55e;
+  color: white;
+}
+
+.resume-btn:hover {
+  background: #16a34a;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 120px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+  }
+}
+.typing-text {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #38bdf8;
+  min-height: 60px;
+}
+@media (max-width: 900px) {
+  .typing-text {
+    font-size: 1.5rem;
+  }
+}
